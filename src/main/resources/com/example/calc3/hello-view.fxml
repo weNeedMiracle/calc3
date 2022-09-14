@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.example.calc3.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9fcff" height="100.0" stroke="BLACK" strokeType="INSIDE" width="400.0" />
+            <Text fx:id="output"/>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#num" prefHeight="20.0" prefWidth="50.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#num" prefWidth="50.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#num" prefWidth="50.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#op" prefWidth="30.0" text="/" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#num" prefHeight="20.0" prefWidth="50.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#num" prefWidth="50.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#num" prefWidth="50.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#op" prefWidth="30.0" text="*" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#num" prefHeight="20.0" prefWidth="50.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#num" prefWidth="50.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#num" prefWidth="50.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#op" prefWidth="30.0" text="+" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#num" prefHeight="20.0" prefWidth="50.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#op" prefWidth="50.0" text="-" />
+            <Button mnemonicParsing="false" onAction="#op" prefWidth="50.0" text="=" />
+         </children>
+      </HBox>
+
+   </children>
+</VBox>
